@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+#menu1 {
+    width: auto;
+    text-align: center;
+}
+
+#menu1>h1 {
+    font-family: "LucidaGrandeBold", "Georgia", "sans-serif", "Helvetica";
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#menu1>h3 {
+    font-size: 13px;
+    color: #bbb;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+/** 박스의 크기, 색상 구성하기 */
+/* 전체 박스의 크기 지정과 중앙 배치 */
+#menu1_container {
+    width: 920px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*padding-left:100px;
+    padding-right:100px;*/
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/** 모든 박스의 크기 일괄 지정 */
+/** float : left = 같은 크기를 갖는 박스에 float 속성을 동일 지정 -> 가로로로 배치되고, 부모 넓이를 벗어날 경우 자동 줄바꿈*/
+#menu1_container div {
+    text-align: center;
+    width: 12.2%;
+    height: 100px;
+    float: left;
+}
+
+
+/** 각 박스에 마우스 오버 되었을 때 border+text 색상 변경 */
+#menu1 a>#box:hover {
+    border: 1px solid #00C3BD;
+    color: #00C3BD;
+}
+
+/** 각 박스에 대한 선 색상 지정 */
+#menu1 a>#box {
+    border: 1px solid #eee;
+    line-height: 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    position: relative;
+    color: #575757;
+}
+
+#menu1 #box p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 100%;
+    margin-top: -0.5em;
+    margin-left: -50%;
+    text-align: center;
+}
+
+#menu1 #box #oline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-top: -0.5em;
+    margin-left: -50%;
+    text-align: center;
+}
+
+#menu1 #box img {
+    width: 12px;
+    height: 12px;
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+/** float 마감제 */
+.clear:after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+}

@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* article
+ ----------------------------------- */
+#article {
+    font-family: "Noto Sans Demilight", "Malgun Gothic", "Helvetica";
+    margin-bottom: 150px;
+}
+
+/* intro
+ ----------------------------------- */
+.intro {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* intro > main_text > h2(첫째 줄)
+ ----------------------------------- */
+#article .text_title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #1a1a1a;
+    text-align: left;
+    letter-spacing: -0.5px;
+    font-family: "나눔명조", "sans-serif";
+    line-height: 1.5;
+}
+
+/* intro > main_text > h2(첫째 줄) > 브런치 아이콘
+ ----------------------------------- */
+#article .text_title .brunch_icon_small {
+    width: 28px;
+    height: 28px;
+    margin: 1px 6px 0 5px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../img/B_logo.png) no-repeat 0 0;
+    background-position: 10% 100%;
+    vertical-align: top;
+}
+
+/* intro > main_text > text_list(2,3,4번 줄)
+ ----------------------------------- */
+#article .text_list span {
+    padding-bottom: 16px;
+    margin-top: 3px;
+    font-size: 32px;
+    line-height: 46px;
+    font-family: "나눔명조", "sans-serif";
+    color: #cacaca;
+    letter-spacing: -0.05em;
+}
+
+#article .text_list span.special {
+    color: #dedede;
+}
+
+/* intro > update > update_icon
+ ----------------------------------- */
+.intro .update .update_icon {
+    float: right;
+    font-size: 11px;
+    font-family: "Georgia", "sans-serif";
+    font-style: italic;
+    color: #00c3bd;
+    padding-top: 5px;
+}
+
+/* intro > update > update_content
+ ----------------------------------- */
+.intro .update .update_content {
+    float: right;
+    padding-left: 7px;
+    color: #959595;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.intro .update .update_content:hover {
+    text-decoration: underline
+}
+
+/* editor_pick > 갤러리 전체
+ ----------------------------------- */
+.editor_pick {
+    width: 100%;
+    margin-top: 22px;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 0px;
+}
+
+/* editor_pick sliding_article
+ ----------------------------------- */
+.editor_pick .sliding_article {
+    display: inline-block;
+    float: left;
+}
+
+/* editor_pick > 갤러리(li 한 개 영역)
+ ----------------------------------- */
+.editor_pick .sliding_article .li_wrap {
+    width: 33.3%;
+    height: 260px;
+    float: left;
+    overflow: visible;
+    display: inline-block;
+}
+
+/* editor_pick 링크의 영역 확장
+ ----------------------------------- */
+.editor_pick .li_wrap a {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+/* editor_pick 이미지 가득 채우기
+ ----------------------------------- */
+.editor_pick .img_articles img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#article .img_articles {
+    height: 100%;
+    position: relative;
+}
+
+#article .img_articles>div {
+    z-index: 5;
+}
+
+#article .img_articles:hover:after {
+    content: '';
+    display: block;
+    background-color: #00000099;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 갤러리 이미지 속 TEXT 위치 조정
+ ----------------------------------- */
+.img_text_first {
+    display: inline;
+    left: 36.6%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-30%, 130%);
+}
+
+.img_text_second {
+    display: inline;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, 130%);
+}
+
+.img_text_third {
+    display: inline;
+    left: 50.3%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, 80%);
+}
+
+/* 갤러리 이미지 속 TEXT > 글제목
+ ----------------------------------- */
+.main_subject {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-family: "나눔명조", "sans-serif";
+    font-size: 30px;
+    line-height: 36px;
+    color: white;
+    width: 100%;
+}
+
+/* 갤러리 이미지 속 TEXT >  글쓴이
+ ----------------------------------- */
+#article .info_by {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Noto Sans Light", "sans-serif";
+    padding-top: 10px;
+    padding-left: 7px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* 갤러리 이미지 속 TEXT > by
+ ----------------------------------- */
+#article .by_icon {
+    display: inline-block;
+    font-size: 11px;
+    font-family: "Georgia", "sans-serif";
+    font-style: italic;
+    color: white;
+}
+
+/* editor_pick > sliding number 가운데정렬
+ ----------------------------------- */
+.sliding_number {
+    text-align: center;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    /* editor_pick > sliding number > 링크 설정
+ ----------------------------------- */
+}
+
+#article .link_page a {
+    display: inline-block;
+    float: left;
+    font-family: "Noto Sans", "sans-serif";
+    font-size: 15px;
+    color: #cacaca;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 3px;
+}
+
+/* editor_pick > sliding number hover 밑줄처리
+ ----------------------------------- */
+#article .link_page a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 1000;
+    line-height: 20px;
+    /* editor_pick > sliding number > float 마감제
+ ----------------------------------- */
+}
+
+#article .clear {
+    float: none;
+    clear: both;
+}

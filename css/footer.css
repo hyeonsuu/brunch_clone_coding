@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 하단 영역 크기 지정 및 배경 설정
+ ----------------------------------- */
+#footer {
+    width: auto;
+    height: 320px;
+    background: #101010;
+    overflow: hidden;
+}
+
+#footer>.fbox {
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+
+/* 로고와 인용문 삽입
+ ----------------------------------- */
+#footer blockquote {
+    float: left;
+    position: absolute;
+    top: 50px;
+}
+
+#footer blockquote:after {
+    float: none;
+    clear: both;
+}
+
+/* 사이트맵 리스트 가로 배치
+ ----------------------------------- */
+#footer #sitemap {
+    float: right;
+    width: 580px;
+    position: absolute;
+    top: 50px;
+    left: 380px;
+
+}
+
+#footer #sitemap li {
+    display: inline-block;
+    width: 32%;
+    line-height: 250%;
+    font-size: 0.8em;
+}
+
+#footer #sitemap li a {
+    color: #ccc;
+}
+
+#footer #sitemap:after {
+    float: none;
+    clear: both;
+}
+
+/* 카피라이트 배치
+ ----------------------------------- */
+#footer .copybox {
+    border-top: 1px solid #444;
+    position: relative;
+    top: 240px;
+}
+
+#footer address {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: "Lucida Grande", "arial";
+    color: #aaa;
+    position: absolute;
+    top: 30px;
+}
+
+/* 구글플레이, 애플스토어 링크 아이콘 배치
+ ----------------------------------- */
+#footer #sns {
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+#footer #sns li a {
+    margin-left: 10px;
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/** menu2의 전체 속성 지정*/
+#menu2 {
+    width: auto;
+    text-align: center;
+    background: #FAFAFA;
+    padding-top: 100px;
+    margin: 150px auto;
+
+}
+
+#menu2>h1 {
+    font-family: "LucidaGrandeBold", "Georgia", "sans-serif", "Helvetica";
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#menu2>h3 {
+    margin: 15px 0px 20px;
+    font-size: 13px;
+    color: #bbb;
+    letter-spacing: -1px;
+
+}
+
+/** section 버튼 속성 지정*/
+#menu2 #button {
+    font-weight: bold;
+    display: inline-block;
+    color: #959595;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #959595;
+    padding: 8px 17px;
+    margin: 20px 0px 50px;
+    background: #fff;
+}
+
+/** 각 버튼에 마우스 오버 되었을 때 border,text color 변경 */
+#menu2 a>#button:hover {
+    border: 1px solid #00C3BD;
+    color: #00C3BD;
+}
+
+#menu2_container {
+    text-align: center;
+    background: #FAFAFA;
+    padding-bottom: 80px;
+}
+
+/** 버튼 속성 지정  */
+#button1 {
+    font-weight: bold;
+    display: inline-block;
+    color: #959595;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #959595;
+    padding: 8px 10px;
+    font-family: "NotoSansCJKkr-Light", "sans-serif";
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/** 각 버튼에 마우스 오버 되었을 때 border,text color 변경 */
+#all_box a>#button1:hover {
+    border: 1px solid #00C3BD;
+    color: #00C3BD;
+}
+
+/** line > img 크기와 사이즈 조정하기 */
+#all_box img {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+#all_box #writer_1 {
+    color: #333333;
+    margin-top: 30px;
+    display: block;
+    font-family: "NanumMyeongjo", "sans-serif";
+    font-size: 20px;
+    text-align: center;
+}
+
+#all_box #writer_2 {
+    font-weight: bold;
+    color: #666666;
+    margin: 10px;
+    display: block;
+    font-family: "NotoSansCJKkr-Light", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+}
+
+/** line-height 속성을 지정하여 줄 간격 맞추기 */
+#all_box #writer_3 {
+    line-height: 20px;
+    width: 260px;
+    height: 60px;
+    font-weight: bold;
+    color: #959595;
+    margin: 16px 0px;
+    font-family: "NotoSansCJKkr-Light", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+#line {
+    width: 260px;
+    height: 100%;
+    display: inline-block;
+    padding: 46px 40px;
+    background: #fff;
+    text-decoration: none;
+    margin: 8px 8px;
+}

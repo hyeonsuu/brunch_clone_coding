@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+    font-family: "Noto Sans Light", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+/* menu3 전체
+----------------------------------- */
+#menu3 {
+    margin-bottom: 300px;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* 브런치 작가 지원하기----------------------------------- */
+#menu3 #support {
+    width: 100%;
+    margin: 130px 0px;
+    padding: 0;
+}
+
+/* RECOMMENDED ARTICLES
+   -> 타이틀
+----------------------------------- */
+#menu3 #title>h1 {
+    font-family: "LucidaGrandeBold", "Georgia", "sans-serif", "Helvetica";
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#menu3 #title>h3 {
+    font-size: 13px;
+    color: #bbb;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+/* #menu3 > list_slide
+   -> 목록(ul)
+----------------------------------- */
+#menu3 .list_slide {
+    display: block;
+    text-align: center;
+    width: 1900px;
+}
+
+/* list_slide > list
+   -> 작품 가로 정렬 (li)
+----------------------------------- */
+#menu3 .list_slide>.list {
+    width: 13.8%;
+    margin: 30px 3px;
+    padding: 0;
+    float: left;
+}
+
+/* list_slide > list > link_slide
+   -> a 태그 영역 확장 -> 리스트 전체 선택영역 지정
+----------------------------------- */
+#menu3 .link_slide {
+    display: block;
+}
+
+/* list_slide > link_slide > img_articles
+   -> 작품 사진
+----------------------------------- */
+#menu3 .img_articles {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-size: cover;
+}
+
+/* list_slide > link_slide > tit_subject
+   -> 작품 제목
+----------------------------------- */
+#menu3 .tit_subject {
+    display: block;
+    margin: 10px 0;
+    padding: 0 9px;
+    color: #303030;
+    font-weight: 540;
+    text-align: left;
+    letter-spacing: -1px;
+    float: left;
+}
+
+/* list_slide > link_slide > tit_subject
+   -> 해당 리스트에 마우스 커서 올렸을 때
+      작품 제목 밑줄 그리기
+----------------------------------- */
+#menu3 .link_slide:hover .tit_subject {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* list_slide > link_slide > desc_subject
+   -> 작품 내용
+----------------------------------- */
+#menu3 .desc_subject {
+    display: block;
+    margin: 10px 0;
+    padding: 0 9px;
+    padding-right: 10px;
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: 540;
+    line-height: 20px;
+    letter-spacing: -1px;
+    text-align: justify;
+    float: left;
+}
+
+/* list_slide > link_slide > info_by
+   -> 작가 이름
+ ----------------------------------- */
+#menu3 .info_by {
+    text-align: left;
+    font-size: 12px;
+    font-family: "Noto Sans Light", "sans-serif";
+    color: #a5a5a5;
+    line-height: 18px;
+    vertical-align: bottom;
+    letter-spacing: -1px;
+    padding: 0 9px;
+    float: left;
+}
+
+/*  list_slide > link_slide > ico_by
+    -> by
+ ----------------------------------- */
+#menu3 .ico_by {
+    font-size: 11px;
+    font-family: "Georgia", "sans-serif";
+    font-style: italic;
+    color: #a5a5a5;
+}
+
+
+
+/* 마감제 처리
+----------------------------------- */
+#menu3 #clear {
+    float: none;
+    clear: both;
+}
